@@ -5,7 +5,7 @@ import json
 import warnings
 from dotenv import load_dotenv
 warnings.filterwarnings("ignore", category=UserWarning, module='datetime')
-load_dotenv(dotenv_path="F:/backendcourse/module5/sleep_bot_update/.env")
+load_dotenv(dotenv_path="path/.env")
 
 START_COMMAND = 'start'
 HEY_COMMAND = 'hey'

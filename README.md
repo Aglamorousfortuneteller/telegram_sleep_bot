@@ -1,20 +1,49 @@
-# Telegram Sleep Bot
+# 💤 Telegram Sleep Bot
 
-This project is a simple Telegram bot that helps users track and manage their sleep. Users can log their sleep times, rate their sleep quality, and add notes for each sleep session. The bot can also retrieve the user's previous sleep records and display them.
+This project is a simple Telegram bot that helps users track and manage their sleep. Users can log their sleep times, rate sleep quality, and add personal notes for each session. The bot also allows viewing past sleep records.
 
-## Features
+---
 
-- **Log Sleep**: Users can log their bed time using the `/sleep` command.
-- **Log Wake**: Users can log their wake-up time using the `/wake` command and get the total duration of their sleep.
-- **Sleep Quality**: After waking up, users can rate their sleep quality from 0 to 10 using the `/quality` command.
-- **Notes**: Users can add notes for their sleep sessions using the `/notes` command.
-- **View Records**: Users can view all their past sleep records or the most recent one with `/view_records` and `/view_last_record`.
+## 🚀 Features
 
-## Installation
+- **/sleep** – Log bedtime.
+- **/wake** – Log wake-up time and see sleep duration.
+- **/quality** – Rate sleep quality (0–10).
+- **/notes** – Add notes about your sleep session.
+- **/view_records** – View all previous sleep sessions.
+- **/view_last_record** – View the most recent sleep session.
 
-To use the bot, follow these steps:
+---
+
+## 🛠 Installation
+
+To use the bot:
 
 1. **Clone the repository**:
 
-   ```bash
-   git clone https://github.com/Aglamorousfortuneteller/telegram_sleep_bot.git
+```bash
+git clone https://github.com/Aglamorousfortuneteller/telegram_sleep_bot.git
+cd telegram_sleep_bot
+pip install -r requirements.txt
+BOT_TOKEN=your_telegram_bot_token
+python main.py
+
+
+🗂 Files
+main.py – Bot logic and command handling
+
+database.py – SQLite database structure and connection
+
+.env – Your secret bot token (not committed)
+
+requirements.txt – Python dependencies
+
+📦 Dependencies
+python-dotenv
+
+pyTelegramBotAPI
+
+⚠️ License
+This project is for educational and personal use. Contributions are welcome!
+
+You can paste this content directly into a file named `README.md` inside your project folder. Let me know if you also want a `requirements.txt` snippet.
